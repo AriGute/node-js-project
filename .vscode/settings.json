@@ -1,8 +1,10 @@
 {
-    
+    "typescript.suggest.paths": false ,
+    "node-module-intellisense.scanBuiltinModules": true,
+    "node-module-intellisense.scanFileModules": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
-      
+    }     ,
+    "editor.acceptSuggestionOnCommitCharacter": false
 }

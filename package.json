@@ -1,0 +1,30 @@
+{
+  "name": "house-renting",
+  "version": "1.0.0",
+  "description": "my first app in node jas, house renting website",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriGute/node-js-project.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "javaScript",
+    "html"
+  ],
+  "author": "Ariel Gueta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AriGute/node-js-project/issues"
+  },
+  "homepage": "https://github.com/AriGute/node-js-project#readme"
+}
