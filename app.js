@@ -1,31 +1,20 @@
-var express = require('express');
 
+var express = require('express');
+var navigator = require('./controllers/navigationController');
 var app = express();
 
+// set view engin.
 app.set('view engine', 'ejs');
-app.use('/assets', express.static('assets'));
 
-app.get('/', function (req, res) {
-    res.render('index');
-});
-app.get('/contact', function (req, res) {
-    res.render('contact');
-});
+// static files
+app.use(express.static('./public'));
 
-
-
-app.get('/profile/:name', function (req, res) {
-    var data = {
-        age: 28,
-        job: 'web ninja',
-        hobbies: ['play games', 'eating', 'eating again']
-    }
-    res.render('profile', {
-        person: req.params.name,
-        data: data
-    });
+app.get('/', function(req, res){
+    res.render('home');
 });
 
+navigator(app);
 
-
+// start listen to port 3000
 app.listen(3000);
+console.log('Listen to port 3000.');
