@@ -1,6 +1,9 @@
 <html>
 
 <head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="assets/posts.js"></script>
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 
@@ -12,9 +15,20 @@
         </h1>
         <hr>
         <%- include('partial/navigation_bar.ejs') %>
-        <h2>Post new post or just read some posts for your enjoyment.</h2>
+        <div class="post" id="post list">
+            <form id="postForm">
+                <input type="text" name="post" placeholder="Post somthing..." required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="list">
+            <ul>
+                <% for(let i = 0 ; i < posts.length; i++){ %>
+                <li><%= posts[i].item %></li>
+                <% }%>
+            </ul>
+        </div>
     </div>
-
 </body>
 
 </html>

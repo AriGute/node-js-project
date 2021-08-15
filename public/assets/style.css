@@ -4,17 +4,29 @@ body {
 }
 
 div {
-    background-color: darkgrey;
+    background-color: rgb(70, 70, 70);
     padding: 0.5% 2%;
 }
 
+div.post {
+    background-color: rgb(71, 71, 71);
+    padding: 0.5% 2%;
+    text-align: center;
+}
+
+div.list {
+    background-color: rgb(109, 109, 109);
+    padding: 0.5% 2%;
+    text-align: center;
+}
+
 div.navBar {
-    background-color: lightgrey;
+    background-color: rgb(148, 148, 148);
     padding: 0px;
     text-align: center;
 }
 
-form{
+form {
     text-align: center;
 }
 
@@ -39,7 +51,22 @@ p {
 }
 
 li {
-    font-size: 16px;
+    width: 100%;
+    padding: 5px;
     color: #fff;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+li:hover {
+    text-decoration: line-through;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
