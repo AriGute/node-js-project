@@ -1,8 +1,8 @@
 # node-js-project
 First project in node js.
-Writh posts and add them to the front page.
+Write posts and add them to the front page.
 
-# Things that i learn:
+# Things that i work with:
 * node.js 
 * express
 * ajax
